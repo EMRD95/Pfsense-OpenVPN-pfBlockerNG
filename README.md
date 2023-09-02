@@ -46,8 +46,11 @@ Create the OpenVPN configuration with the wizard, check the boxes to automatical
 
 ### Wizard
 Type of Server: Local User Access
+
 Generate new certificates
+
 Set the IPv4 Local Network to the network you want the VPN to access (either only the LAN side of the Pfsense firewall or also the WAN side).
+
 Check Redirect IPv4 Gateway for pfBlockerNG to work with the VPN later (disables split tunneling).
 
 ![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/f16ddccd-3500-4e10-8cc8-b05c86d13e7f)
