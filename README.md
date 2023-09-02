@@ -53,8 +53,43 @@ DNS query forwarding is also enabled.
 
 ## pfBlockerNG
 
-Set up the basics with the wizard, make sure the basic rules are downloaded and that the service is enabled.
+Set up the basics with the wizard, make sure the defaults rules/feeds are downloaded and that the service is enabled.
+
+### IP configurations
+
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/1b65b04f-40e5-46d9-adab-a7127b5a09b2)
+
+Check WAN for the Inbound Firewall Rules and everything else for the Outbound Firewall Rules (ctrl+click).
+
+### DNSBL configurations
+
+LAN as Web Server Interface
+Permit Firewall Rules enabled, ctrl+click on the interfaces
+
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/a52ce528-7529-4809-94dd-56ba400f2547)
+
+## Reboot
+
+It's better to reboot the firewall to apply the changes at this point.
+
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/584d9483-1b11-4101-9ce6-91a38c1b5ab2)
 
 
+## OpenVPN / Client Export Utility
+
+Export the VPN configuration with the Client Export Utility.
+You can check Block Outside DNS to avoid issues.
+
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/3b4f96bf-5ed4-4912-9752-3aa5564a362f)
+
+### Editing the .ovpn config file
+
+Just download the "Most Clients" inline configuration
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/5cf79f6d-ad67-4586-9ce7-b315c64920e6)
+
+The IP address will be set to your WAN interface, it will work locally, if you want to use the VPN over the internet, set you public ip address instead of the local ipv4.
+You'd have to also open the ports in your router (default 1194) to the WAN interface of the firewall.
+If you use ESXI, using promiscious mode might resolve routing issues.
+Firewall rules are left by default in this example.
 
 
