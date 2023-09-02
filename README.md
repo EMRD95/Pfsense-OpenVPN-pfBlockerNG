@@ -3,7 +3,7 @@ Pfsense Version 2.7.0-RELEASE, on ESXI 8.0.1 with two vswitch, one for LAN and o
 
 Documentation to set up a VPN accessible from the internet with pfBlockerNG-devel enabled.
 
-This a basic testing configuration not intended for production use.
+This a basic testing configuration.
 
 - [Home page](#Home-page)
 - [System > General Setup](#System--General-Setup)
