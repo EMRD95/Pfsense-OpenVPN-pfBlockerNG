@@ -42,13 +42,23 @@ Install the needed packets
 
 Create the OpenVPN configuration with the wizard, check the boxes to automatically create the firewall rules at the end, and then set up the last configuration similarly to the one bellow.
 
+### Wizard
+Type of Server: Local User Access
+Generate new certificates
+Set the IPv4 Local Network to the network you want the VPN to access (either only the LAN side of the Pfsense firewall or also the WAN side).
+Check Redirect IPv4 Gateway for pfBlockerNG to work with the VPN later (disables split tunneling).
+
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/34adc30d-909c-4c17-b74a-d6a601ad6749)
+
+Check that everyting is set up properly / set up a few more options such as Block Outside DNS and Force DNS cache update
+
 ![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/2543296f-e731-4768-809b-d50a9af35ba1)
 
 ## Create the user that will connect with the VPN
 
 A certificate must be created for the user, use the same encryption as the one used in the VPN server.
 
-![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/6a2d478c-6514-4a95-9ac6-3b69ef21dde1)
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/c61ddb41-a2cb-40b1-9ee8-4702720203c1)
 
 ## Create an interface for the VPN
 
