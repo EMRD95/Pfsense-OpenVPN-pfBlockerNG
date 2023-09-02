@@ -9,6 +9,8 @@ This a basic testing configuration not intended for production use.
 - [System > General Setup](#System--General-Setup)
 - [Packets](#Packets)
 - [OpenVPN server configuration](#OpenVPN-server-configuration)
+  - [Wizard](#Wizard)
+  - [Server configuration](#Server-configuration)
 - [Create the user that will connect with the VPN](#Create-the-user-that-will-connect-with-the-VPN)
 - [Create an interface for the VPN](#Create-an-interface-for-the-VPN)
 - [DNS resolver](#DNS-resolver)
@@ -48,7 +50,15 @@ Generate new certificates
 Set the IPv4 Local Network to the network you want the VPN to access (either only the LAN side of the Pfsense firewall or also the WAN side).
 Check Redirect IPv4 Gateway for pfBlockerNG to work with the VPN later (disables split tunneling).
 
-![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/34adc30d-909c-4c17-b74a-d6a601ad6749)
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/f16ddccd-3500-4e10-8cc8-b05c86d13e7f)
+
+Create the firewall rules:
+
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/011e5d2b-43ae-4770-a4a9-cdf4e27ecbcb)
+
+### Server configuration
+
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/9b25f88e-055b-4528-b010-112e7e9e32ed)
 
 Check that everyting is set up properly / set up a few more options such as Block Outside DNS and Force DNS cache update
 
@@ -58,7 +68,7 @@ Check that everyting is set up properly / set up a few more options such as Bloc
 
 A certificate must be created for the user, use the same encryption as the one used in the VPN server.
 
-![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/c61ddb41-a2cb-40b1-9ee8-4702720203c1)
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/27c96228-0075-491d-b80d-acafe894b58f)
 
 ## Create an interface for the VPN
 
