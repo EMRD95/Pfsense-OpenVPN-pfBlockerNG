@@ -5,6 +5,20 @@ Documentation to set up a VPN accessible from the internet with pfBlockerNG enab
 
 This a basic testing configuration not intended for production use.
 
+- [Home page](#Home-page)
+- [System > General Setup](#System--General-Setup)
+- [Packets](#Packets)
+- [OpenVPN server configuration](#OpenVPN-server-configuration)
+- [Create the user that will connect with the VPN](#Create-the-user-that-will-connect-with-the-VPN)
+- [Create an interface for the VPN](#Create-an-interface-for-the-VPN)
+- [DNS resolver](#DNS-resolver)
+- [pfBlockerNG](#pfBlockerNG)
+  - [IP configurations](#IP-configurations)
+  - [DNSBL configurations](#DNSBL-configurations)
+- [Reboot](#Reboot)
+- [OpenVPN / Client Export Utility](#OpenVPN--Client-Export-Utility)
+  - [Editing the .ovpn config file](#Editing-the-.ovpn-config-file)
+
 ## Home page
 
 ![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/4e1de2fd-05a8-45a7-8d8b-4fc0a61e1936)
