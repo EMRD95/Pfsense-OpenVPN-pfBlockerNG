@@ -18,6 +18,7 @@ This a basic testing configuration not intended for production use.
 - [Reboot](#Reboot)
 - [OpenVPN / Client Export Utility](#OpenVPN--Client-Export-Utility)
   - [Editing the .ovpn config file](#Editing-the-.ovpn-config-file)
+- [pfBlockerNG-devel testing addresses](#pfBlockerNG-devel-testing-addresses)
 
 ## Home page
 
@@ -125,3 +126,4 @@ DNSBL_ADs_Basic
 
 Accessing one of these addresses will redirect you to this page:
 
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/de62e918-f47b-4ffd-99c4-41b3fd52811a)
