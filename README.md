@@ -127,3 +127,5 @@ DNSBL_ADs_Basic
 Accessing one of these addresses will redirect you to this page:
 
 ![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/de62e918-f47b-4ffd-99c4-41b3fd52811a)
+
+pfBlockerNG doesn't MITM the connection so you might have an invalid certificate warning in your browser, there's no quick fix to this.
