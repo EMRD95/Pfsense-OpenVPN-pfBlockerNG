@@ -151,4 +151,8 @@ Accessing one of these addresses will redirect you to this page:
 
 ![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/de62e918-f47b-4ffd-99c4-41b3fd52811a)
 
-pfBlockerNG doesn't MITM the connection so you might have an invalid certificate warning in your browser, there's no quick fix to this.
+pfBlockerNG doesn't MITM the connection so you might have an invalid certificate warning in your browser, you can try to use the Unbound python mode and Enable the DNSBL python Null Block mode for HSTS domains.
+
+![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/f2345d60-60ad-4c98-8add-8d11b5048f43)
+
+But the page won't be redirected anymore (with www.googleadservices.com for exemple).
