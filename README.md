@@ -1,7 +1,7 @@
 # Pfsense-OpenVPN-pfBlockerNG
 Pfsense Version 2.7.0-RELEASE, on ESXI 8.0.1 with two vswitch, one for LAN and one for WAN.
 
-Documentation to set up a VPN accessible from the internet with pfBlockerNG enabled.
+Documentation to set up a VPN accessible from the internet with pfBlockerNG-devel enabled.
 
 This a basic testing configuration not intended for production use.
 
@@ -101,9 +101,27 @@ You can check Block Outside DNS to avoid issues.
 Just download the "Most Clients" inline configuration
 ![image](https://github.com/EMRD95/Pfsense-OpenVPN-pfBlockerNG/assets/114953576/5cf79f6d-ad67-4586-9ce7-b315c64920e6)
 
-The IP address will be set to your WAN interface, it will work locally, if you want to use the VPN over the internet, set you public ip address instead of the local ipv4.
+The IP address will be set to your WAN interface, if you want to use the VPN over the internet, set you public ip address instead of the local ipv4 by directly editing the .ovpn file with a notepad.
+The config is set to use the VPN over the internet and not locally, so the DNS resolution will have issues if you try to use it locally. If you want a local VPN set up an other server.
 You'd have to also open the ports in your router (default 1194) to the WAN interface of the firewall.
 If you use ESXI, using promiscious mode might resolve routing issues.
 Firewall rules are left by default in this example.
 
+## pfBlockerNG-devel testing addresses
+
+Some addresses to test that pfBlockerNG-devel is working properly
+
+www.google-analytics.com	StevenBlack_ADs
+DNSBL_ADs_Basic
+
+adservice.google.com	StevenBlack_ADs
+DNSBL_ADs_Basic
+
+tags.tiqcdn.com	StevenBlack_ADs
+DNSBL_ADs_Basic
+
+incoming.telemetry.mozilla.org	StevenBlack_ADs
+DNSBL_ADs_Basic
+
+Accessing one of these addresses will redirect you to this page:
 
